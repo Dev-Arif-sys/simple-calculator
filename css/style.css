@@ -1,0 +1,57 @@
+
+*,*::after,*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    padding-top: 2rem;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(auto-fit ,minmax(100px,auto));
+    align-content: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+button{
+    font-size: 1.2rem;
+    background-color: rgb(233, 227, 227);
+    border: 1px solid white;
+}
+
+button:hover{
+    background-color: rgb(250, 245, 245);
+}
+.output{
+    grid-column: 1/-1;
+    background-color: rgb(3, 16, 39);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: .5em;
+    /* word-wrap:break-word; */
+    word-break: break-all;
+}
+
+.previous-oparand{
+    color: rgb(241, 236, 236);
+    font-size: 1.5rem;
+}
+.current-oparand{
+    color: white;
+    font-size: 2.5rem;
+
+}
+
+.span-two{
+    grid-column: span 2;
+}
