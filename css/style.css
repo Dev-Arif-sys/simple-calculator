@@ -9,9 +9,14 @@ h1{
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 }
-
+.wrapper{
+    width: 400px;
+    margin: 0 auto;
+}
 .container{
+   
     display: grid;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: repeat(auto-fit ,minmax(100px,auto));
